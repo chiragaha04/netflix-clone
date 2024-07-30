@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="netflix.css"> -->
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+.wrapper{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+    .section-1 {
+      /* padding: 250px;  */
+
+      background-color: rgba(7, 7, 7, 0.569);
+      background-image: url(section-1.jpg);
+
+      width: 100%;
+      /* height: 600px; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* padding: 100px; */
+      /* opacity: 0.3320; */
+      /* padding: auto; */
+      background-blend-mode:darken ;
+    }
+  
+    .nav {
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 50px;
+      /* height: 60px; */
+      /* background-color: aqua; */
+      top: 0px;
+    }
+
+    .logo {
+      background-image: url(netflix-2-logo-svgrepo-com.svg);
+      background-size: cover;
+      height: 80px;
+      width: 80px;
+      margin-left: 40px;
+      /* margin-top: 10px; */
+      margin-top: 0px;
+    }
+
+    .dropdown {
+      display: flex;
+      padding: 60px;
+    }
+
+    .lang {
+      background-image: url(language.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 26px;
+      width: 26px;
+    }
+
+    .languag {
+      height: 30px;
+      width: 80px;
+      color: white;
+      border: none;
+      margin-top: 1px;
+      background: none;
+      font-weight: 500;
+    }
+    .english{
+      background-color: rgb(187, 12, 12);
+    }
+    .hindi{
+      background-color: rgb(209, 54, 54);
+    }
+    .box {
+      display: flex;
+      border: 2px solid rgb(255, 255, 255);
+      justify-content: space-between;
+      width: 150px;
+      background-color: black;
+      opacity: 0.523;
+      color: white;
+    }
+
+    .dropdown {
+      display: flex;
+      gap: 5px;
+      /* justify-content: space-between; */
+    }
+
+    .buttoon {
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+      border-radius: 6px;
+      height: 30px;
+      width: 60px;
+      font-weight: 700;
+    }
+    .buttoon:hover{
+      background-color: brown;
+    }
+    .sec-1text {
+      color: white;
+      text-align: center;
+      height: 100px;
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+      padding: 20px;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .form {
+      justify-content: center;
+      /* justify-content: space-between; */
+      gap: 20px;
+      display: flex;
+      padding: 40px;
+      background: none;
+      height: 120px;
+    }
+    .devider1{
+      height: 10px;
+      width: 100%;
+      background-color: gray;
+    }
+    .section-2 {
+      background-color: black;
+      /* height: 600px; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-blend-mode: darken;
+    }
+
+    .sec-2text {
+      height: 400px;
+      width: 500px;
+      /* border: 2px solid red; */
+      color: white;
+      font-weight: 700;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .h11 {
+      color: aliceblue;
+      font-weight: 900;
+      font-size: 60px;
+    }
+    .tv{
+      height: 500px;
+      width: 600px;
+      background-image: url(tv.png);
+      position: relative;
+    }
+    .videos{
+      height: 270px;
+      width: 460px;
+      position: absolute;
+      top: 95px;
+      left: 90px;
+      /* z-index: ; */
+    }
+    .section-3{
+      position: relative;
+      width: 100%;
+      display: flex;
+      padding: 72px;
+      background-color: black
+    }
+
+.sec-3min{
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 16%;
+    bottom: 8%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    min-width: 15rem;
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    z-index: 1;
+    color: white;
+}
+.sec-3imagee{
+height: 600px;
+width: 50%;
+background-image:url(mobile-0819.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+}   
+.sec-3minimagee{
+  height: 90px;
+  width: 60px;
+  background-image: url(boxshot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
+.sec-3min2{
+  padding: 10px;
+}
+.Download{
+  background-image: url(download-icon.gif);
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  background-size: cover;
+  /* margin-right: 20px; */
+  /* float: right; */
+}
+.sec-3text{
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+.section-4{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  padding: 80px;
+  height: 700px;
+}
+ h1{
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  padding: 10px;
+  margin-top: 150px;
+ }  
+.sec-4text{
+  text-align: center;
+  width: 50%;
+}
+.sec-4imag{
+  width: 50%;
+  position: relative;
+  
+}
+.imigg{
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-image: url(device-pile-in.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.vediooo{
+  position: absolute;
+  height: 340px;
+  width: 410px;
+  margin-left: 130px;
+  }
+  .section-5{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+  }
+  .kidimg{
+    width: 50%;
+    background-image: url(AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+  .sec-5text{
+    width: 50%;
+    text-align: left;
+  }
+  .section-6{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .nastedlist{
+    justify-content: space-evenly;
+    /* pad: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .listmenu{
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  .toggle{
+    display: flex;
+    background-color: rgb(62, 61, 61);
+    gap: 30px;
+    padding: 20px;
+    justify-content: space-between;
+    border: 3px solid black;
+  }
+  .togglebutton{
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    float: right;
+    margin-right: 0px;
+    border: none;
+    background-color: rgb(62, 61, 61);
+    color: white;
+  }
+  .togglebutton:hover{
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+  }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="wrapper">
+      <div class="section-1">
+
+        <nav class="nav">
+          <div class="logo">
+  
+          </div>
+          <div class="dropdown">
+            <div class="box">
+              <div class="lang"></div>
+              <select alt="" class="languag">
+                <option class="english" id="hindi">English</option>
+                <option class="hindi" id="hindi">हिंदी</option>
+              </select>
+            </div>
+            <button type="submit" class="buttoon">sign in</button>
+          </div>
+        </nav>
+        <div class="sec-1text">Unlimited movies,Tv shows and more</div>
+        <p>
+          Watch anywhere.cancel anytime.
+        </p>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="form">
+          <input type="email" id="email" placeholder="Email address "
+            style=" background:none; width: 300px; font-weight: 300; font-size: medium; ">
+          <button
+            style="width: 100px;background-color: red;border-radius: 6px;border: 1px solid black; width: 130px; color: white; font-weight: 700; font-size: medium">Get
+            Started ></button>
+        </form>
+  
+      </div>
+    </div>
+    <div class="devider1"></div>
+    <div class="section-2">
+      <div class="sec-2text">
+        <h1 class="h11">Enjoy your tv</h1>
+        <p style="font-size: 30px; font-weight: 400; ">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+        </p>
+      </div>
+      <div class="tv">
+        <!-- <img src="tv.png" class="imgg"> -->
+        <video src="video-tv-in-0819.m4v" controls autoplay muted loop class="videos"></video>
+      </div>
+    </div>
+    <div  class="devider1"></div>
+    <div class="section-3">
+      <div  class="sec-3imagee"></div>
+      <div  class="sec-3min">
+        <div  class="sec-3minimagee"></div>
+        <div class="sec-3min2" >
+          <div id="" class="sec-3min21" style="font-weight: 600; font-size: large;">Stranger Things</div>
+          <div id="" class="sec-3min22" style="color: blue;">Downloading...</div> 
+        </div>
+        <div class="Download"></div>
+    </div>
+    <div class="sec-3text">
+      <h2  class="" style="margin-top: 130px;">Download your shows to watch offline</h2>
+      <p class="" style="font-size: 25px;font-weight: 400; padding: 30px;">Save your favourites easily and always have something to watch.</p>
+  </div>
+  </div>
+  <div class="devider1"></div>
+  <div class="section-4">
+    <div class="sec-4text">
+     <h1>watch everywhere</h1>
+     <p style="font-size: 25px;font-weight: 400;">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+    <div class="sec-4imag">
+      <div class="imigg">
+        <!-- <video src="video-devices-in.m4v" class="vediooo"></video> -->
+      </div>
+      <video src="video-devices-in.m4v" autoplay muted loop class="vediooo"></video>
+    </div>
+  </div>
+  <div class="devider1"></div>
+  <div class="section-5">
+    <div class="kidimg"></div>
+    <div class="sec-5text">
+      <h1>Create profiles for kids</h1>
+      <p style="font-size: 20px; font-weight: 400; width: 62%;  text-align: left;">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+    </div>
+  </div>
+  <div class="devider1"></div>
+  <div class="section-6" >
+    <div class="sec-6min" >
+      <h1 style="font-size: 52px; text-align: center;color: white;
+      font-weight: 800;
+      padding: 10px;
+      margin-top: 150px;" >Frequently Asked Questions</h1>
+      <div>
+        <ul class="nastedlist">
+          <li class="listmenu" >
+            <div class="toggle">
+              <h1 class="lih" style="color: white; font-size: 22px;padding: 10px; margin: 0;" >What is netflix?</h1>
+              <button class="togglebutton" id="butt-1" onclick="charge()">+</button>
+            </div>
+          </li>
+          <li >
+            <div class="toggle">
+              <h1 class="lih" style="color: white; font-size: 22px;padding: 10px; margin: 0;" >how much does netflix cost?</h1>
+              <button class="togglebutton">+</button>
+            </div>
+          </li>
+          <li>
+            <div class="toggle">
+              <h1 class="lih" style="color: white; font-size: 22px;padding: 10px; margin: 0;" >Where can i watch?</h1>
+              <button class="togglebutton">+</button>
+            </div>
+          </li>
+          <li >
+            <div class="toggle">
+              <h1 class="lih" style="color: white; font-size: 22px;padding: 10px; margin: 0;" >how do i cancel?</h1>
+              <button class="togglebutton">+</button>
+            </div>
+          </li>
+          <li>
+            <div class="toggle">
+              <h1 class="lih" style="color: white; font-size: 22px;padding: 10px; margin: 0;" >what can i watch on netflix?</h1>
+              <button class="togglebutton">+</button>
+            </div>
+          </li>
+          <li >
+            <div class="toggle">
+              <h1 class="lih" style="color: white; font-size: 22px;padding: 10px; margin: 0;" >is netflix good for kid?</h1>
+              <button class="togglebutton">+</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-size: 32px;">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="form">
+          <input type="email" id="email" placeholder="Email address "
+            style=" background:none; width: 300px; font-weight: 300; font-size: medium; color: white;">
+          <button 
+            style="width: 100px;background-color: red;border-radius: 6px;border: 1px solid black; width: 130px; color: white; font-weight: 700; font-size: medium">
+            Get Started >
+          </button>
+        </form>
+  
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script>
+function charge() {
+  document.getElementById("butt-1").innerHTML="lorem ipsum lorem lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem lorem ipsum"
+  document.getElementById("butt-1").style="color: white; "
+} 
+</script>
+</html>
